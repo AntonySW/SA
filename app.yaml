@@ -1,0 +1,17 @@
+application: academic-emblem-615
+version: 3
+runtime: php
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /js
+  static_dir: js
+
+- url: /style
+  static_dir: style
